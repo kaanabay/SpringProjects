@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+<link rel="stylesheet" href="../static/bootstrap.css" th:href="@{/bootstrap.css}" />
+</head>
+
+<body>
+<p> <h1> Topics in database: </h1> </p>
+<table>
+<tr>
+	<th>Id</th>
+	<th>Name</th>
+	<th>Desc</th>
+</tr>
+<tr th:each="topic : ${list}" >
+	<td th:text="${topic.id}"></td>
+	<td th:text="${topic.name}"></td>
+	<td th:text="${topic.description}"></td>
+</tr>
+</table>
+   <p> <h1> Add a new topic below: </h1> </p>
+ 
+	<form action="#" th:action="@{/topics}" th:object="${topic}" method="post">
+	  Id: <input type="text" id="id" name="id" th:field="*{id}" /> <br/>
+	  Name: <input type="text" id="name" name="name" th:field="*{name}" /> <br/>
+	  Description: <input type="text" id="description" name="description" th:field="*{description}" /> <br/>
+	  <input type="submit" />
+	</form> 
+</body>
+</html>

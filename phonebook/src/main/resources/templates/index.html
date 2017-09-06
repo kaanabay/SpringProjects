@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>My Phone Book</title>
+<link rel="stylesheet" href="../css/main.css" th:href="@{/css/main.css}" />
+</head>
+<body>
+
+<div id="wrapper">
+
+	<div id="main">
+		<h1>Below is the list of phones saved:</h1>
+		
+		<table>
+		<tr>
+			<th> NAME </th>
+			<th> LAST NAME </th>
+			<th> PHONE NUMBER </th>
+		</tr>
+		<tr th:each="person : ${persons}">
+			<td th:text="${person.name}"></td>
+			<td th:text="${person.lastName}"></td>
+			<td th:text="${person.phone}"></td>
+		</tr>
+		</table>
+		
+	</div>
+	
+	<section id="sidebar">
+		<h1>Save a new phone number:</h1>
+		<form action="#" th:action="@{/}" th:object="${newperson}" method="post">
+			  Name: <input type="text" id="name" name="name" th:field="*{name}" />
+			  Surname: <input type="text" id="lastName" name="lastName" th:field="*{lastName}" />
+			  Phone number: <input type="text" id="phone" name="phone" th:field="*{phone}" /> <br/>
+			  <input type="submit" value="save" />
+		</form> 
+	</section>
+	
+</div>
+
+</body>
+</html>

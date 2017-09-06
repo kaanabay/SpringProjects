@@ -1,0 +1,131 @@
+!SESSION 2017-09-06 04:53:54.145 -----------------------------------------------
+eclipse.buildId=3.9.0.201707061823-RELEASE-e47
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.ui 2 2 2017-09-06 04:54:09.324
+!MESSAGE org.eclipse.jdt.junit.ResultView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2017-09-06 04:54:09.335
+!MESSAGE org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2017-09-06 04:54:09.342
+!MESSAGE org.eclipse.contribution.xref.ui.views.XReferenceView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.jface.text 2 0 2017-09-06 04:54:14.132
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-09-06 04:54:14.137
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-09-06 04:54:18.979
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Kaan Abay'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-09-06 04:54:24.934
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-09-06 04:54:38.418
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-09-06 04:54:41.630
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-09-06 04:54:44.785
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-09-06 04:54:54.759
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-09-06 04:54:57.960
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-09-06 04:55:20.479
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-09-06 04:55:20.574
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY Activator 4 0 2017-09-06 04:57:19.304
+!MESSAGE NullPointerException: null
+!STACK 0
+com.google.common.util.concurrent.UncheckedExecutionException: java.lang.NullPointerException
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2199)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3932)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3936)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalCloudServiceDashElement.getLaunchConfigs(LocalCloudServiceDashElement.java:144)
+	at org.springframework.ide.eclipse.boot.dash.model.AbstractLaunchConfigurationsDashElement$3.compute(AbstractLaunchConfigurationsDashElement.java:414)
+	at org.springframework.ide.eclipse.boot.dash.model.AbstractLaunchConfigurationsDashElement$3.compute(AbstractLaunchConfigurationsDashElement.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:64)
+	at org.springframework.ide.eclipse.boot.dash.model.AbstractLaunchConfigurationsDashElement.createRunStateExp(AbstractLaunchConfigurationsDashElement.java:446)
+	at org.springframework.ide.eclipse.boot.dash.model.AbstractLaunchConfigurationsDashElement.<init>(AbstractLaunchConfigurationsDashElement.java:105)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalCloudServiceDashElement.<init>(LocalCloudServiceDashElement.java:73)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel.lambda$3(LocalBootDashModel.java:293)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel.fetchLocalServices(LocalBootDashModel.java:293)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel.access$3(LocalBootDashModel.java:284)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel$6.run(LocalBootDashModel.java:313)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.debug.internal.core.LaunchManager.isValidLaunchConfigurationName(LaunchManager.java:2706)
+	at org.eclipse.debug.internal.core.LaunchConfigurationType.newInstance(LaunchConfigurationType.java:473)
+	at org.springframework.ide.eclipse.boot.launch.cli.CloudCliServiceLaunchConfigurationDelegate.createLaunchConfig(CloudCliServiceLaunchConfigurationDelegate.java:156)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalCloudServiceDashElement$1.load(LocalCloudServiceDashElement.java:68)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalCloudServiceDashElement$1.load(LocalCloudServiceDashElement.java:1)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3522)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2315)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2193)
+	... 22 more
+
+!ENTRY Activator 4 0 2017-09-06 04:57:19.314
+!MESSAGE NullPointerException: null
+!STACK 0
+com.google.common.util.concurrent.UncheckedExecutionException: java.lang.NullPointerException
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2199)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3932)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3936)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalCloudServiceDashElement.getLaunchConfigs(LocalCloudServiceDashElement.java:144)
+	at org.springframework.ide.eclipse.boot.dash.model.AbstractLaunchConfigurationsDashElement$3.compute(AbstractLaunchConfigurationsDashElement.java:414)
+	at org.springframework.ide.eclipse.boot.dash.model.AbstractLaunchConfigurationsDashElement$3.compute(AbstractLaunchConfigurationsDashElement.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:64)
+	at org.springframework.ide.eclipse.boot.dash.model.AbstractLaunchConfigurationsDashElement.createRunStateExp(AbstractLaunchConfigurationsDashElement.java:446)
+	at org.springframework.ide.eclipse.boot.dash.model.AbstractLaunchConfigurationsDashElement.<init>(AbstractLaunchConfigurationsDashElement.java:105)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalCloudServiceDashElement.<init>(LocalCloudServiceDashElement.java:73)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel.lambda$3(LocalBootDashModel.java:293)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel.fetchLocalServices(LocalBootDashModel.java:293)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel.access$3(LocalBootDashModel.java:284)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel$6.run(LocalBootDashModel.java:313)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.debug.internal.core.LaunchManager.isValidLaunchConfigurationName(LaunchManager.java:2706)
+	at org.eclipse.debug.internal.core.LaunchConfigurationType.newInstance(LaunchConfigurationType.java:473)
+	at org.springframework.ide.eclipse.boot.launch.cli.CloudCliServiceLaunchConfigurationDelegate.createLaunchConfig(CloudCliServiceLaunchConfigurationDelegate.java:156)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalCloudServiceDashElement$1.load(LocalCloudServiceDashElement.java:68)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalCloudServiceDashElement$1.load(LocalCloudServiceDashElement.java:1)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3522)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2315)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2193)
+	... 22 more
